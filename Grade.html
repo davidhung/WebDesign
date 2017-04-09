@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Enter Score:</h1>
+Score:<br>
+<input type="number" id="try1">
+<br><br>
+=<p id="result">pass or bye</p>
+
+<button onclick="check()">check</button>
+<script>
+function check() {
+		var a;
+		 a=parseInt(document.getElementById("try1").value);
+         if(a>=60)
+         document.getElementById("result").innerHTML="pass";
+         else
+         document.getElementById("result").innerHTML="bye";
+}
+</script>
+
+</body>
+</html>
