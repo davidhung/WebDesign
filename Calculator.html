@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Enter number:</h1>
+x:<br>
+<input type="number" id="try1">
+<br>
+y:<br>
+<input type="number" id="try2">
+<br><br>
+=<p id="result">answer</p>
+<br><br>
+<button onclick="plus()">+</button>
+<button onclick="minus()">-</button>
+<button onclick="mul()">*</button>
+<button onclick="divide()">/</button><br>
+<br><input type="button" onclick="C()" value="Reset">
+
+
+<script>
+function plus() {
+	var a,b;
+    a=parseInt(document.getElementById("try1").value);
+    b=parseInt(document.getElementById("try2").value);
+    document.getElementById("result").innerHTML=a+b;
+}
+function minus() {
+	var a,b;
+    a=parseInt(document.getElementById("try1").value);
+    b=parseInt(document.getElementById("try2").value);
+    document.getElementById("result").innerHTML=a-b;
+}
+function mul() {
+	var a,b;
+    a=parseInt(document.getElementById("try1").value);
+    b=parseInt(document.getElementById("try2").value);
+    document.getElementById("result").innerHTML=a*b;
+}
+function divide() {
+	var a,b;
+    a=parseInt(document.getElementById("try1").value);
+    b=parseInt(document.getElementById("try2").value);
+    document.getElementById("result").innerHTML=a/b;
+}
+function C() {
+    document.getElementById("try1").value="";
+    document.getElementById("try2").value="";
+    document.getElementById('result').innerHTML="answer";
+}
+</script>
+
+</body>
+</html>
